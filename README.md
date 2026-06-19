@@ -1,1 +1,90 @@
-# DEEN & DIN (Islamic Web App) - islamicdeen.nbr\n\nDEEN & DIN is a premium Bangla-first Islamic lifestyle Angular SPA. Version 1 includes prayer times, Quran reader, Hadith, Dua collection, Tasbih counter, Ramadan tools, articles, global search, dark mode, bookmarks, and localStorage-backed preferences.\n\n## Tech Stack\n\n- Angular latest stable\n- TypeScript\n- SCSS\n- RxJS\n- Angular Router\n- LocalStorage\n- GitHub Pages ready\n\n## Local Setup\n\n~~~bash\ncd D:\DEEN-AND-DIN\deen-and-din\nnpm install\nnpm start\n~~~\n\nOpen the local URL shown by Angular CLI, usually http://localhost:4200/.\n\n## Build\n\n~~~bash\nnpm run build\n~~~\n\nProduction output is generated under dist/deen-and-din.\n\n## GitHub Repository\n\nRecommended repository name:\n\n~~~text\nislamicdeen.nbr\n~~~\n\nRecommended branch:\n\n~~~text\nmain\n~~~\n\nInitial version commit:\n\n~~~bash\ngit init\ngit branch -M main\ngit add .\ngit commit -m "Initial commit: DEEN & DIN version 1"\ngit remote add origin https://github.com/<github-username>/islamicdeen.nbr.git\ngit push -u origin main\n~~~\n\n## GitHub Pages Deployment\n\nBuild with the repository base href:\n\n~~~bash\nnpm run build:pages\n~~~\n\nDeploy:\n\n~~~bash\nnpm run deploy:pages\n~~~\n\nLive URL format:\n\n~~~text\nhttps://<github-username>.github.io/islamicdeen.nbr/\n~~~\n\n## Features\n\n- Home dashboard with Bangla hero, live Bangladesh-time clock, prayer preview, and RxJS countdown\n- Prayer times page with next prayer highlight\n- Quran reader with Arabic and Bangla translation samples\n- Quran bookmark system using localStorage\n- Hadith daily card and list\n- Dua categories with copy and favorite actions\n- Tasbih counter with presets and localStorage persistence\n- Ramadan Sehri/Iftar cards and countdown\n- Islamic articles cards\n- Global English/Bangla search\n- Dark mode toggle with saved preference\n- Mobile bottom navigation and desktop navbar\n\n## Notes\n\nVersion 1 uses clean demo data services so future API integration can replace the service data layer without changing feature UI contracts.
+# DEEN & DIN (Islamic Web App) - islamicdeen.nbr
+
+DEEN & DIN is a premium Bangla-first Islamic lifestyle Angular SPA. Version 1 includes prayer times, Quran reader, Hadith, Dua collection, Tasbih counter, Ramadan tools, articles, global search, dark mode, bookmarks, and localStorage-backed preferences.
+
+## Tech Stack
+
+- Angular latest stable
+- TypeScript
+- SCSS
+- RxJS
+- Angular Router
+- LocalStorage
+- GitHub Pages ready
+
+## Local Setup
+
+~~~bash
+cd D:\DEEN-AND-DIN\deen-and-din
+npm install
+npm start
+~~~
+
+Open the local URL shown by Angular CLI, usually http://localhost:4200/.
+
+## Build
+
+~~~bash
+npm run build
+~~~
+
+Production output is generated under dist/deen-and-din/browser.
+
+## GitHub Repository
+
+Repository name:
+
+~~~text
+islamicdeen.nbr
+~~~
+
+Branch:
+
+~~~text
+main
+~~~
+
+Remote:
+
+~~~text
+https://github.com/hoque07/islamicdeen.nbr
+~~~
+
+## GitHub Pages Deployment
+
+Build with the repository base href:
+
+~~~bash
+npm run build:pages
+~~~
+
+Deploy:
+
+~~~bash
+npm run deploy:pages
+~~~
+
+Live URL:
+
+~~~text
+https://hoque07.github.io/islamicdeen.nbr/
+~~~
+
+## Features
+
+- Home dashboard with Bangla hero, live Bangladesh-time clock, prayer preview, and RxJS countdown
+- Prayer times page with next prayer highlight
+- Quran reader with Arabic and Bangla translation samples
+- Quran bookmark system using localStorage
+- Hadith daily card and list
+- Dua categories with copy and favorite actions
+- Tasbih counter with presets and localStorage persistence
+- Ramadan Sehri/Iftar cards and countdown
+- Islamic articles cards
+- Global English/Bangla search
+- Dark mode toggle with saved preference
+- Mobile bottom navigation and desktop navbar
+
+## Notes
+
+Version 1 uses clean demo data services so future API integration can replace the service data layer without changing feature UI contracts.
