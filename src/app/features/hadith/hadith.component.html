@@ -1,0 +1,17 @@
+<section class="page">
+  <h1>হাদিস</h1>
+  <app-card [highlight]="true">
+    <span>Daily Hadith</span>
+    <h2>{{ hadiths[0].text }}</h2>
+    <p>{{ hadiths[0].source }}</p>
+  </app-card>
+
+  <div class="list">
+    @for (hadith of hadiths; track hadith.text) {
+      <app-card>
+        <h3>{{ hadith.text }}</h3>
+        <p>{{ hadith.source }}</p>
+      </app-card>
+    }
+  </div>
+</section>

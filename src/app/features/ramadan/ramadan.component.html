@@ -1,0 +1,20 @@
+<section class="page">
+  <h1>রমজান টুলস</h1>
+  <div class="grid">
+    <app-card [highlight]="true">
+      <span>Ramadan Day</span>
+      <h2>{{ ramadanDay }}</h2>
+      <p>রোজার পরিকল্পনা ও ইবাদত ট্র্যাক করুন।</p>
+    </app-card>
+    <app-card>
+      <span>Sehri</span>
+      <h2>{{ sehri }}</h2>
+      <p>বাংলাদেশ সময়</p>
+    </app-card>
+    <app-card>
+      <span>Iftar</span>
+      <h2>{{ iftar }}</h2>
+      <p>Countdown: {{ countdown$ | async }}</p>
+    </app-card>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+<section class="page">
+  <h1>ইসলামিক আর্টিকেল</h1>
+  <div class="article-grid">
+    @for (article of articles; track article.title) {
+      <app-card>
+        <span>{{ article.minutes }} min read</span>
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.excerpt }}</p>
+      </app-card>
+    }
+  </div>
+</section>

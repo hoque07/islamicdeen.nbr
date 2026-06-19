@@ -1,0 +1,60 @@
+.page {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 800;
+  padding: 0.7rem 0.9rem;
+}
+
+button.active,
+.actions button:first-child {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.dua-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+span {
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.arabic {
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+@media (max-width: 780px) {
+  .dua-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,89 @@
+.reader-layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 320px 1fr;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 2rem 1rem;
+}
+
+aside,
+main {
+  min-width: 0;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+aside {
+  position: sticky;
+  top: 92px;
+  align-self: start;
+}
+
+aside button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0.7rem;
+  padding: 0.9rem;
+  text-align: left;
+  width: 100%;
+}
+
+aside button span {
+  color: var(--muted);
+  display: block;
+}
+
+aside button.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.reader-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.reader-head span {
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.reader-head button {
+  background: var(--accent);
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 0.75rem 1rem;
+}
+
+app-card {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.arabic {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1.9;
+}
+
+@media (max-width: 820px) {
+  .reader-layout {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    position: static;
+  }
+}

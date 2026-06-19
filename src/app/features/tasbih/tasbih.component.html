@@ -1,0 +1,13 @@
+<section class="tasbih">
+  <h1>তাসবিহ কাউন্টার</h1>
+  <div class="counter">
+    <span>{{ count }} / {{ target }}</span>
+    <button type="button" (click)="increment()">+1</button>
+  </div>
+  <div class="actions">
+    @for (preset of presets; track preset) {
+      <button type="button" [class.active]="target === preset" (click)="setPreset(preset)">{{ preset }}</button>
+    }
+    <button type="button" (click)="reset()">Reset</button>
+  </div>
+</section>

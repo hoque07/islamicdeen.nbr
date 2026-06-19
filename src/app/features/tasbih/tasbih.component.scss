@@ -1,0 +1,50 @@
+.tasbih {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.counter {
+  background: radial-gradient(circle, var(--accent-soft), var(--surface));
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.5rem, 7vw, 4rem);
+}
+
+.counter span {
+  color: var(--accent-strong);
+  font-size: clamp(3rem, 15vw, 8rem);
+  font-weight: 900;
+}
+
+button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 900;
+  padding: 0.85rem 1.1rem;
+}
+
+.counter button,
+button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 1rem;
+}

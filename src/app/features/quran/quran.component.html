@@ -1,0 +1,30 @@
+<section class="reader-layout">
+  <aside>
+    <h1>কুরআন রিডার</h1>
+    @for (surah of surahs; track trackSurah($index, surah)) {
+      <button type="button" [class.active]="selected.id === surah.id" (click)="selectSurah(surah)">
+        <strong>{{ surah.banglaName }}</strong>
+        <span>{{ surah.name }} · {{ surah.meaning }}</span>
+      </button>
+    }
+  </aside>
+
+  <main>
+    <div class="reader-head">
+      <div>
+        <span>Arabic + Bangla</span>
+        <h2>{{ selected.banglaName }}</h2>
+      </div>
+      <button type="button" (click)="quran.toggleBookmark(selected.id)">
+        {{ quran.isBookmarked(selected.id) ? 'Bookmarked' : 'Bookmark' }}
+      </button>
+    </div>
+
+    @for (verse of selected.verses; track verse.arabic) {
+      <app-card>
+        <p class="arabic" dir="rtl">{{ verse.arabic }}</p>
+        <p>{{ verse.bangla }}</p>
+      </app-card>
+    }
+  </main>
+</section>

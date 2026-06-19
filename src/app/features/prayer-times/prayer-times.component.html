@@ -1,0 +1,21 @@
+<section class="page-head">
+  <h1>নামাজের সময়</h1>
+  <p>ডেমো ডেটা ভিত্তিক বাংলাদেশ সময়। ভবিষ্যতে API যুক্ত করার জন্য সার্ভিস আলাদা রাখা হয়েছে।</p>
+</section>
+
+@if (nextPrayer$ | async; as next) {
+  <section class="next-strip">
+    <span>Next prayer</span>
+    <strong>{{ next.prayer.banglaName }} · {{ next.label }}</strong>
+  </section>
+
+  <section class="prayer-grid">
+    @for (prayer of prayers$ | async; track trackPrayer($index, prayer)) {
+      <app-card [highlight]="prayer.key === next.prayer.key">
+        <span>{{ prayer.name }}</span>
+        <h2>{{ prayer.banglaName }}</h2>
+        <p>{{ prayer.timeLabel }}</p>
+      </app-card>
+    }
+  </section>
+}

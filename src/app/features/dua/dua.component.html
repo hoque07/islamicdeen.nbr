@@ -1,0 +1,23 @@
+<section class="page">
+  <h1>দোয়া কালেকশন</h1>
+  <div class="tabs">
+    @for (category of categories; track category) {
+      <button type="button" [class.active]="selectedCategory === category" (click)="selectedCategory = category">{{ category }}</button>
+    }
+  </div>
+
+  <div class="dua-grid">
+    @for (item of duas; track item.id) {
+      <app-card>
+        <span>{{ item.category }}</span>
+        <h2>{{ item.title }}</h2>
+        <p class="arabic" dir="rtl">{{ item.arabic }}</p>
+        <p>{{ item.bangla }}</p>
+        <div class="actions">
+          <button type="button" (click)="copy(item)">{{ copiedId === item.id ? 'Copied' : 'Copy' }}</button>
+          <button type="button" (click)="dua.toggleFavorite(item.id)">{{ dua.isFavorite(item.id) ? 'Favorited' : 'Favorite' }}</button>
+        </div>
+      </app-card>
+    }
+  </div>
+</section>

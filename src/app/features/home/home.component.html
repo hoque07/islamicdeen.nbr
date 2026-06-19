@@ -1,0 +1,58 @@
+<section class="hero section-grid">
+  <div class="hero-copy">
+    <h1>প্রতিদিনের ইবাদত সহজ, সুন্দর ও সচেতনভাবে</h1>
+    <p>নামাজের সময়, কুরআন পাঠ, দোয়া, তাসবিহ ও রমজান টুলস এক জায়গায় সাজানো একটি প্রিমিয়াম ইসলামিক অ্যাপ।</p>
+    <div class="hero-actions">
+      <a routerLink="/prayer-times" class="primary-link">নামাজের সময় দেখুন</a>
+      <a routerLink="/quran" class="secondary-link">কুরআন পড়ুন</a>
+    </div>
+  </div>
+
+  @if (nextPrayer$ | async; as next) {
+    <app-card [highlight]="true" class="next-card">
+      <span class="mini-label">পরবর্তী নামাজ</span>
+      <h2>{{ next.prayer.banglaName }}</h2>
+      <p>{{ next.prayer.name }} · {{ next.prayer.timeLabel }}</p>
+      <strong>{{ next.label }}</strong>
+      <small>বাংলাদেশ সময়: {{ clock$ | async }}</small>
+    </app-card>
+  }
+</section>
+
+<section class="quick-grid">
+  <app-card>
+    <span class="mini-label">Quran</span>
+    <h3>আজকের পাঠ</h3>
+    <p>সূরা ফাতিহা ও ছোট সূরাগুলো বাংলা অর্থসহ পড়ুন, বুকমার্ক করুন।</p>
+    <a routerLink="/quran">Open Reader</a>
+  </app-card>
+  <app-card>
+    <span class="mini-label">Hadith</span>
+    <h3>দৈনিক হাদিস</h3>
+    <p>শান্ত, সংক্ষিপ্ত ও কাজের উপদেশ দিয়ে দিন শুরু করুন।</p>
+    <a routerLink="/hadith">Read Hadith</a>
+  </app-card>
+  <app-card>
+    <span class="mini-label">Tasbih</span>
+    <h3>ডিজিটাল কাউন্টার</h3>
+    <p>জিকির গণনা সংরক্ষণ করুন, প্রিসেট দিয়ে দ্রুত শুরু করুন।</p>
+    <a routerLink="/tasbih">Start Tasbih</a>
+  </app-card>
+</section>
+
+@if ((search.query$ | async); as query) {
+  @if (query.length > 0) {
+    <section class="search-results">
+      <h2>Search results</h2>
+      <div class="quick-grid">
+        @for (item of results$ | async; track item.route) {
+          <app-card>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.subtitle }}</p>
+            <a [routerLink]="item.route">Open</a>
+          </app-card>
+        }
+      </div>
+    </section>
+  }
+}
