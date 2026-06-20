@@ -1,0 +1,596 @@
+[
+  {
+    "id": 1,
+    "arabic": "الرَّحْمٰن",
+    "transliteration": "Ar-Rahman",
+    "bengali": "পরম দয়ালু"
+  },
+  {
+    "id": 2,
+    "arabic": "الرَّحِيم",
+    "transliteration": "Ar-Rahim",
+    "bengali": "অতি দয়ালু"
+  },
+  {
+    "id": 3,
+    "arabic": "الْمَلِك",
+    "transliteration": "Al-Malik",
+    "bengali": "সর্বভৌম অধিপতি"
+  },
+  {
+    "id": 4,
+    "arabic": "الْقُدُّوس",
+    "transliteration": "Al-Quddus",
+    "bengali": "পবিত্র"
+  },
+  {
+    "id": 5,
+    "arabic": "السَّلَام",
+    "transliteration": "As-Salam",
+    "bengali": "শান্তি দানকারী"
+  },
+  {
+    "id": 6,
+    "arabic": "الْمُؤْمِن",
+    "transliteration": "Al-Mu’min",
+    "bengali": "নিরাপত্তা দানকারী"
+  },
+  {
+    "id": 7,
+    "arabic": "الْمُهَيْمِن",
+    "transliteration": "Al-Muhaymin",
+    "bengali": "পরিপূর্ণ রক্ষক"
+  },
+  {
+    "id": 8,
+    "arabic": "الْعَزِيز",
+    "transliteration": "Al-Aziz",
+    "bengali": "পরাক্রমশালী"
+  },
+  {
+    "id": 9,
+    "arabic": "الْجَبَّار",
+    "transliteration": "Al-Jabbar",
+    "bengali": "ক্ষমতাধর মেরামতকারী"
+  },
+  {
+    "id": 10,
+    "arabic": "الْمُتَكَبِّر",
+    "transliteration": "Al-Mutakabbir",
+    "bengali": "মহিমান্বিত"
+  },
+  {
+    "id": 11,
+    "arabic": "الْخَالِق",
+    "transliteration": "Al-Khaliq",
+    "bengali": "সৃষ্টিকর্তা"
+  },
+  {
+    "id": 12,
+    "arabic": "الْبَارِئ",
+    "transliteration": "Al-Bari",
+    "bengali": "পরিকল্পনাকারী সৃষ্টিকর্তা"
+  },
+  {
+    "id": 13,
+    "arabic": "الْمُصَوِّر",
+    "transliteration": "Al-Musawwir",
+    "bengali": "আকৃতি দানকারী"
+  },
+  {
+    "id": 14,
+    "arabic": "الْغَفَّار",
+    "transliteration": "Al-Ghaffar",
+    "bengali": "অত্যন্ত ক্ষমাশীল"
+  },
+  {
+    "id": 15,
+    "arabic": "الْقَهَّار",
+    "transliteration": "Al-Qahhar",
+    "bengali": "প্রবল নিয়ন্ত্রণকারী"
+  },
+  {
+    "id": 16,
+    "arabic": "الْوَهَّاب",
+    "transliteration": "Al-Wahhab",
+    "bengali": "অবিরাম দানকারী"
+  },
+  {
+    "id": 17,
+    "arabic": "الرَّزَّاق",
+    "transliteration": "Ar-Razzaq",
+    "bengali": "রিজিক দানকারী"
+  },
+  {
+    "id": 18,
+    "arabic": "الْفَتَّاح",
+    "transliteration": "Al-Fattah",
+    "bengali": "সমাধান ও বিজয় দানকারী"
+  },
+  {
+    "id": 19,
+    "arabic": "الْعَلِيم",
+    "transliteration": "Al-Alim",
+    "bengali": "সর্বজ্ঞ"
+  },
+  {
+    "id": 20,
+    "arabic": "الْقَابِض",
+    "transliteration": "Al-Qabid",
+    "bengali": "সংকুচিতকারী"
+  },
+  {
+    "id": 21,
+    "arabic": "الْبَاسِط",
+    "transliteration": "Al-Basit",
+    "bengali": "প্রসারিতকারী"
+  },
+  {
+    "id": 22,
+    "arabic": "الْخَافِض",
+    "transliteration": "Al-Khafid",
+    "bengali": "নিম্নকারী"
+  },
+  {
+    "id": 23,
+    "arabic": "الرَّافِع",
+    "transliteration": "Ar-Rafi",
+    "bengali": "উচ্চতাদানকারী"
+  },
+  {
+    "id": 24,
+    "arabic": "الْمُعِز",
+    "transliteration": "Al-Mu'izz",
+    "bengali": "সম্মানদানকারী"
+  },
+  {
+    "id": 25,
+    "arabic": "الْمُذِل",
+    "transliteration": "Al-Mudhill",
+    "bengali": "অপমানকারী"
+  },
+  {
+    "id": 26,
+    "arabic": "السَّمِيع",
+    "transliteration": "As-Sami",
+    "bengali": "সর্বশ্রোতা"
+  },
+  {
+    "id": 27,
+    "arabic": "الْبَصِير",
+    "transliteration": "Al-Basir",
+    "bengali": "সর্বদ্রষ্টা"
+  },
+  {
+    "id": 28,
+    "arabic": "الْحَكَم",
+    "transliteration": "Al-Hakam",
+    "bengali": "ন্যায়বিচারক"
+  },
+  {
+    "id": 29,
+    "arabic": "الْعَدْل",
+    "transliteration": "Al-Adl",
+    "bengali": "ন্যায়পরায়ণ"
+  },
+  {
+    "id": 30,
+    "arabic": "اللَّطِيف",
+    "transliteration": "Al-Latif",
+    "bengali": "সুক্ষ্মদর্শী"
+  },
+  {
+    "id": 31,
+    "arabic": "الْخَبِير",
+    "transliteration": "Al-Khabir",
+    "bengali": "সর্বজ্ঞ অভিজ্ঞ"
+  },
+  {
+    "id": 32,
+    "arabic": "الْحَلِيم",
+    "transliteration": "Al-Halim",
+    "bengali": "সহনশীল"
+  },
+  {
+    "id": 33,
+    "arabic": "الْعَظِيم",
+    "transliteration": "Al-Azim",
+    "bengali": "মহান"
+  },
+  {
+    "id": 34,
+    "arabic": "الْغَفُور",
+    "transliteration": "Al-Ghafur",
+    "bengali": "ক্ষমাশীল"
+  },
+  {
+    "id": 35,
+    "arabic": "الشَّكُور",
+    "transliteration": "Ash-Shakur",
+    "bengali": "কৃতজ্ঞতার প্রতিদানকারী"
+  },
+  {
+    "id": 36,
+    "arabic": "الْعَلِيّ",
+    "transliteration": "Al-Ali",
+    "bengali": "সর্বোচ্চ"
+  },
+  {
+    "id": 37,
+    "arabic": "الْكَبِير",
+    "transliteration": "Al-Kabir",
+    "bengali": "অতি মহান"
+  },
+  {
+    "id": 38,
+    "arabic": "الْحَفِيظ",
+    "transliteration": "Al-Hafiz",
+    "bengali": "রক্ষাকারী"
+  },
+  {
+    "id": 39,
+    "arabic": "الْمُقِيت",
+    "transliteration": "Al-Muqit",
+    "bengali": "রিজিক নিয়ন্ত্রণকারী"
+  },
+  {
+    "id": 40,
+    "arabic": "الْحسِيب",
+    "transliteration": "Al-Hasib",
+    "bengali": "হিসাব গ্রহণকারী"
+  },
+  {
+    "id": 41,
+    "arabic": "الْجَلِيل",
+    "transliteration": "Al-Jalil",
+    "bengali": "মহিমাময়"
+  },
+  {
+    "id": 42,
+    "arabic": "الْكَرِيم",
+    "transliteration": "Al-Karim",
+    "bengali": "উদার"
+  },
+  {
+    "id": 43,
+    "arabic": "الرَّقِيب",
+    "transliteration": "Ar-Raqib",
+    "bengali": "পর্যবেক্ষক"
+  },
+  {
+    "id": 44,
+    "arabic": "الْمُجِيب",
+    "transliteration": "Al-Mujib",
+    "bengali": "প্রার্থনা কবুলকারী"
+  },
+  {
+    "id": 45,
+    "arabic": "الْوَاسِع",
+    "transliteration": "Al-Wasi",
+    "bengali": "ব্যাপক"
+  },
+  {
+    "id": 46,
+    "arabic": "الْحَكِيم",
+    "transliteration": "Al-Hakim",
+    "bengali": "প্রজ্ঞাময়"
+  },
+  {
+    "id": 47,
+    "arabic": "الْوَدُود",
+    "transliteration": "Al-Wadud",
+    "bengali": "ভালবাসা দানকারী"
+  },
+  {
+    "id": 48,
+    "arabic": "الْمَجِيد",
+    "transliteration": "Al-Majid",
+    "bengali": "মহিমাময়"
+  },
+  {
+    "id": 49,
+    "arabic": "الْبَاعِث",
+    "transliteration": "Al-Ba'ith",
+    "bengali": "পুনরুত্থানকারী"
+  },
+  {
+    "id": 50,
+    "arabic": "الشَّهِيد",
+    "transliteration": "Ash-Shahid",
+    "bengali": "সাক্ষী"
+  },
+  {
+    "id": 51,
+    "arabic": "الْحَقّ",
+    "transliteration": "Al-Haqq",
+    "bengali": "সত্য"
+  },
+  {
+    "id": 52,
+    "arabic": "الْوَكِيل",
+    "transliteration": "Al-Wakil",
+    "bengali": "ভরসার স্থান"
+  },
+  {
+    "id": 53,
+    "arabic": "الْقَوِي",
+    "transliteration": "Al-Qawi",
+    "bengali": "শক্তিশালী"
+  },
+  {
+    "id": 54,
+    "arabic": "الْمَتِين",
+    "transliteration": "Al-Matin",
+    "bengali": "অত্যন্ত দৃঢ়"
+  },
+  {
+    "id": 55,
+    "arabic": "الْوَلِي",
+    "transliteration": "Al-Wali",
+    "bengali": "অভিভাবক"
+  },
+  {
+    "id": 56,
+    "arabic": "الْحَمِيد",
+    "transliteration": "Al-Hamid",
+    "bengali": "প্রশংসিত"
+  },
+  {
+    "id": 57,
+    "arabic": "الْمُحْصِي",
+    "transliteration": "Al-Muhsi",
+    "bengali": "গণনাকারী"
+  },
+  {
+    "id": 58,
+    "arabic": "الْمُبْدِئ",
+    "transliteration": "Al-Mubdi",
+    "bengali": "আরম্ভকারী"
+  },
+  {
+    "id": 59,
+    "arabic": "الْمُعِيد",
+    "transliteration": "Al-Mu'id",
+    "bengali": "পুনরায় সৃষ্টি"
+  },
+  {
+    "id": 60,
+    "arabic": "الْمُحْيِي",
+    "transliteration": "Al-Muhyi",
+    "bengali": "জীবন দানকারী"
+  },
+  {
+    "id": 61,
+    "arabic": "الْمُمِيت",
+    "transliteration": "Al-Mumit",
+    "bengali": "মৃত্যু দানকারী"
+  },
+  {
+    "id": 62,
+    "arabic": "الْحَيّ",
+    "transliteration": "Al-Hayy",
+    "bengali": "চিরজীবী"
+  },
+  {
+    "id": 63,
+    "arabic": "الْقَيُّوم",
+    "transliteration": "Al-Qayyum",
+    "bengali": "স্বয়ংস্থিত"
+  },
+  {
+    "id": 64,
+    "arabic": "الْوَاجِد",
+    "transliteration": "Al-Wajid",
+    "bengali": "সবকিছু প্রাপ্তকারী"
+  },
+  {
+    "id": 65,
+    "arabic": "الْمَاجِد",
+    "transliteration": "Al-Majid",
+    "bengali": "মহিমাময়"
+  },
+  {
+    "id": 66,
+    "arabic": "الْواحِد",
+    "transliteration": "Al-Wahid",
+    "bengali": "একক"
+  },
+  {
+    "id": 67,
+    "arabic": "الصَّمَد",
+    "transliteration": "As-Samad",
+    "bengali": "নির্ভরতার কেন্দ্র"
+  },
+  {
+    "id": 68,
+    "arabic": "الْقَادِر",
+    "transliteration": "Al-Qadir",
+    "bengali": "সক্ষম"
+  },
+  {
+    "id": 69,
+    "arabic": "الْمُقْتَدِر",
+    "transliteration": "Al-Muqtadir",
+    "bengali": "সর্বশক্তিমান"
+  },
+  {
+    "id": 70,
+    "arabic": "الْمُقَدِّم",
+    "transliteration": "Al-Muqaddim",
+    "bengali": "অগ্রসরকারী"
+  },
+  {
+    "id": 71,
+    "arabic": "الْمُؤَخِّر",
+    "transliteration": "Al-Mu'akhkhir",
+    "bengali": "পিছিয়ে দানকারী"
+  },
+  {
+    "id": 72,
+    "arabic": "الْأَوَّل",
+    "transliteration": "Al-Awwal",
+    "bengali": "প্রথম"
+  },
+  {
+    "id": 73,
+    "arabic": "الْآخِر",
+    "transliteration": "Al-Akhir",
+    "bengali": "শেষ"
+  },
+  {
+    "id": 74,
+    "arabic": "الظَّاهِر",
+    "transliteration": "Az-Zahir",
+    "bengali": "প্রকাশ্য"
+  },
+  {
+    "id": 75,
+    "arabic": "الْبَاطِن",
+    "transliteration": "Al-Batin",
+    "bengali": "গোপন"
+  },
+  {
+    "id": 76,
+    "arabic": "الْوَالِي",
+    "transliteration": "Al-Wali",
+    "bengali": "শাসক"
+  },
+  {
+    "id": 77,
+    "arabic": "الْمُتَعَالِي",
+    "transliteration": "Al-Muta'ali",
+    "bengali": "উচ্চতম"
+  },
+  {
+    "id": 78,
+    "arabic": "الْبَرّ",
+    "transliteration": "Al-Barr",
+    "bengali": "অতি দয়ালু"
+  },
+  {
+    "id": 79,
+    "arabic": "التَّوَّاب",
+    "transliteration": "At-Tawwab",
+    "bengali": "তওবা কবুলকারী"
+  },
+  {
+    "id": 80,
+    "arabic": "الْمُنْتَقِم",
+    "transliteration": "Al-Muntaqim",
+    "bengali": "প্রতিশোধ গ্রহণকারী"
+  },
+  {
+    "id": 81,
+    "arabic": "العَفُو",
+    "transliteration": "Al-Afuww",
+    "bengali": "ক্ষমাকারী"
+  },
+  {
+    "id": 82,
+    "arabic": "الرَّؤُوف",
+    "transliteration": "Ar-Ra'uf",
+    "bengali": "অতিশয় দয়ালু"
+  },
+  {
+    "id": 83,
+    "arabic": "مَالِكُ الْمُلْك",
+    "transliteration": "Malik-ul-Mulk",
+    "bengali": "রাজত্বের মালিক"
+  },
+  {
+    "id": 84,
+    "arabic": "ذُو الْجَلَالِ وَالإِكْرَام",
+    "transliteration": "Dhul-Jalali wal-Ikram",
+    "bengali": "মহিমা ও সম্মানের অধিকারী"
+  },
+  {
+    "id": 85,
+    "arabic": "الْمُقْسِط",
+    "transliteration": "Al-Muqsit",
+    "bengali": "ন্যায়পরায়ণ বিচারক"
+  },
+  {
+    "id": 86,
+    "arabic": "الْجَامِع",
+    "transliteration": "Al-Jami",
+    "bengali": "একত্রকারী"
+  },
+  {
+    "id": 87,
+    "arabic": "الْغَنِيّ",
+    "transliteration": "Al-Ghani",
+    "bengali": "অবিনশ্বর ধনী"
+  },
+  {
+    "id": 88,
+    "arabic": "الْمُغْنِي",
+    "transliteration": "Al-Mughni",
+    "bengali": "অভাবমুক্তকারী"
+  },
+  {
+    "id": 89,
+    "arabic": "الْمَانِع",
+    "transliteration": "Al-Mani",
+    "bengali": "রোধকারী"
+  },
+  {
+    "id": 90,
+    "arabic": "الضَّارّ",
+    "transliteration": "Ad-Darr",
+    "bengali": "ক্ষতিকারী (আল্লাহ যার ইচ্ছা)"
+  },
+  {
+    "id": 91,
+    "arabic": "النَّافِع",
+    "transliteration": "An-Nafi",
+    "bengali": "উপকারী"
+  },
+  {
+    "id": 92,
+    "arabic": "النُّور",
+    "transliteration": "An-Nur",
+    "bengali": "আলো"
+  },
+  {
+    "id": 93,
+    "arabic": "الْهَادِي",
+    "transliteration": "Al-Hadi",
+    "bengali": "পথপ্রদর্শক"
+  },
+  {
+    "id": 94,
+    "arabic": "الْبَدِيع",
+    "transliteration": "Al-Badi",
+    "bengali": "নতুন সৃষ্টি"
+  },
+  {
+    "id": 95,
+    "arabic": "الْبَاقِي",
+    "transliteration": "Al-Baqi",
+    "bengali": "চিরস্থায়ী"
+  },
+  {
+    "id": 96,
+    "arabic": "الْوَارِث",
+    "transliteration": "Al-Warith",
+    "bengali": "উত্তরাধিকারী"
+  },
+  {
+    "id": 97,
+    "arabic": "الرَّشِيد",
+    "transliteration": "Ar-Rashid",
+    "bengali": "সঠিক পথ প্রদর্শক"
+  },
+  {
+    "id": 98,
+    "arabic": "الصَّبُور",
+    "transliteration": "As-Sabur",
+    "bengali": "অত্যন্ত ধৈর্যশীল"
+  },
+  {
+    "id": 99,
+    "arabic": "الْعَظِيم",
+    "transliteration": "Al-Azim",
+    "bengali": "মহান"
+  }
+]

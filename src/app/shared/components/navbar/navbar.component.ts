@@ -16,6 +16,7 @@ export class NavbarComponent {
     { label: 'Home', path: '/' },
     { label: 'Prayer', path: '/prayer-times' },
     { label: 'Quran', path: '/quran' },
+    { label: 'Asmaul Husna', path: '/asmaul-husna' },
     { label: 'Hadith', path: '/hadith' },
     { label: 'Dua', path: '/dua' },
     { label: 'Tasbih', path: '/tasbih' },

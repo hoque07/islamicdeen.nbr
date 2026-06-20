@@ -1,0 +1,72 @@
+<section class="asmaul-page">
+  <div class="intro-band">
+    <span class="eyebrow">Asmaul Husna</span>
+    <h1>Allah's 99 Beautiful Names</h1>
+    <p>{{ introText }}</p>
+  </div>
+
+  <div class="toolbar" aria-label="Asmaul Husna search tools">
+    <label class="search-box">
+      <span>Search by Arabic, transliteration, or Bangla meaning</span>
+      <input
+        type="search"
+        [(ngModel)]="query"
+        (ngModelChange)="filterNames()"
+        placeholder="Try Ar-Rahman, Al-Azim, or &#2470;&#2479;&#2492;&#2494;&#2482;&#2497;"
+        autocomplete="off"
+      />
+    </label>
+    <p>{{ filteredNames().length }} of {{ names().length || 99 }} names</p>
+  </div>
+
+  @if (loading()) {
+    <app-card>
+      <p class="state-text">Loading the 99 names...</p>
+    </app-card>
+  } @else if (loadError()) {
+    <app-card>
+      <p class="state-text error">{{ loadError() }}</p>
+    </app-card>
+  } @else if (filteredNames().length === 0) {
+    <app-card>
+      <p class="state-text">No matching name found. Try another Arabic, English, or Bangla word.</p>
+    </app-card>
+  } @else {
+    <div class="names-grid">
+      @for (name of filteredNames(); track trackName($index, name)) {
+        <app-card class="name-card">
+          <div class="card-top">
+            <span>#{{ name.id }}</span>
+            <button type="button" (click)="openDetails(name)">Details</button>
+          </div>
+
+          <button type="button" class="name-main" (click)="openDetails(name)" [attr.aria-label]="'Open ' + name.transliteration">
+            <strong class="arabic" dir="rtl">{{ name.arabic }}</strong>
+            <span>{{ name.transliteration }}</span>
+          </button>
+
+          <p class="meaning">{{ name.bengali }}</p>
+
+          <button type="button" class="copy-button" (click)="copyName(name)">
+            {{ copiedId() === name.id ? 'Copied' : 'Copy name' }}
+          </button>
+        </app-card>
+      }
+    </div>
+  }
+</section>
+
+@if (selectedName(); as selected) {
+  <div class="modal-backdrop" (click)="closeDetails()" role="presentation">
+    <article class="modal-card" role="dialog" aria-modal="true" [attr.aria-label]="selected.transliteration" (click)="$event.stopPropagation()">
+      <button type="button" class="close-button" (click)="closeDetails()" aria-label="Close details">x</button>
+      <span class="eyebrow">Name #{{ selected.id }}</span>
+      <h2 class="arabic" dir="rtl">{{ selected.arabic }}</h2>
+      <h3>{{ selected.transliteration }}</h3>
+      <p>{{ selected.bengali }}</p>
+      <button type="button" class="copy-button" (click)="copyName(selected)">
+        {{ copiedId() === selected.id ? 'Copied' : 'Copy name' }}
+      </button>
+    </article>
+  </div>
+}

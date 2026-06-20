@@ -4,6 +4,7 @@ export const routes: Routes = [
   { path: '', loadComponent: () => import('./features/home/home.component').then((m) => m.HomeComponent), title: 'DEEN & DIN' },
   { path: 'prayer-times', loadComponent: () => import('./features/prayer-times/prayer-times.component').then((m) => m.PrayerTimesComponent), title: 'Prayer Times | DEEN & DIN' },
   { path: 'quran', loadComponent: () => import('./features/quran/quran.component').then((m) => m.QuranComponent), title: 'Quran | DEEN & DIN' },
+  { path: 'asmaul-husna', loadComponent: () => import('./features/asmaul-husna/asmaul-husna.component').then((m) => m.AsmaulHusnaComponent), title: 'Asmaul Husna | DEEN & DIN' },
   { path: 'hadith', loadComponent: () => import('./features/hadith/hadith.component').then((m) => m.HadithComponent), title: 'Hadith | DEEN & DIN' },
   { path: 'dua', loadComponent: () => import('./features/dua/dua.component').then((m) => m.DuaComponent), title: 'Dua | DEEN & DIN' },
   { path: 'tasbih', loadComponent: () => import('./features/tasbih/tasbih.component').then((m) => m.TasbihComponent), title: 'Tasbih | DEEN & DIN' },

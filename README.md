@@ -1,6 +1,6 @@
 # DEEN & DIN (Islamic Web App) - islamicdeen.nbr
 
-DEEN & DIN is a premium Bangla-first Islamic lifestyle Angular SPA. Version 1 includes prayer times, Quran reader, Hadith, Dua collection, Tasbih counter, Ramadan tools, articles, global search, dark mode, bookmarks, and localStorage-backed preferences.
+DEEN & DIN is a premium Bangla-first Islamic lifestyle Angular SPA. Version 1.1 includes prayer times, Quran reader, Hadith, Dua collection, Asmaul Husna, Tasbih counter, Ramadan tools, articles, global search, dark mode, bookmarks, and localStorage-backed preferences.
 
 ## Tech Stack
 
@@ -87,4 +87,4 @@ https://hoque07.github.io/islamicdeen.nbr/
 
 ## Notes
 
-Version 1 uses clean demo data services so future API integration can replace the service data layer without changing feature UI contracts.
+Version 1.1 keeps the app static for GitHub Pages. The Asmaul Husna data comes from public/data/asmaul_husna.json, so it also works offline after the project is installed locally.

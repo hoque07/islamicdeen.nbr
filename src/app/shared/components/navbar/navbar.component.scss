@@ -50,16 +50,17 @@ a {
 
 .desktop-links {
   display: flex;
-  gap: 0.35rem;
+  flex-wrap: wrap;
+  gap: 0.25rem;
   justify-content: center;
 }
 
 .desktop-links a {
   border-radius: 8px;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 700;
-  padding: 0.55rem 0.7rem;
+  padding: 0.52rem 0.58rem;
 }
 
 .desktop-links a.active,
