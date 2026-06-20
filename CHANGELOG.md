@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.1.1 - Dark App Theme
+
+- Updated the site theme to a dark navy Islamic mobile-app style inspired by the supplied reference screenshots.
+- Refined cards, navigation, buttons, backgrounds, and mobile bottom navigation while keeping existing features unchanged.
+
 ## Version 1.1 - Asmaul Husna
 
 - Added a new Asmaul Husna page for all 99 names of Allah.

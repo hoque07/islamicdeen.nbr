@@ -1,13 +1,16 @@
 .card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 92%, white 8%), var(--surface));
+  border: 1px solid color-mix(in srgb, var(--border) 78%, var(--accent));
+  border-radius: 20px;
   box-shadow: var(--shadow);
-  padding: 1.1rem;
+  color: var(--text);
+  padding: 1.15rem;
 }
 
 .highlight {
-  background: linear-gradient(145deg, var(--accent), var(--accent-strong));
-  border-color: transparent;
+  background:
+    radial-gradient(circle at 82% 25%, rgba(189, 238, 255, 0.16), transparent 9rem),
+    linear-gradient(145deg, #172435, #1d2b3f 62%, #14202f);
+  border-color: rgba(189, 238, 255, 0.24);
   color: white;
 }

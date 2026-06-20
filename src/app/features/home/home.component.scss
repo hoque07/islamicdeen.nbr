@@ -1,14 +1,17 @@
 .hero {
   align-items: center;
   background:
-    radial-gradient(circle at 90% 10%, rgba(220, 180, 80, 0.18), transparent 28%),
-    linear-gradient(135deg, color-mix(in srgb, var(--accent-soft) 62%, var(--page)), var(--page));
-  border-bottom: 1px solid var(--border);
+    radial-gradient(circle at 78% 30%, rgba(189, 238, 255, 0.13), transparent 18rem),
+    linear-gradient(145deg, #111a26, #162130 70%, #0e1722);
+  border: 1px solid rgba(189, 238, 255, 0.1);
+  border-radius: 0 0 30px 30px;
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 1.25fr 0.75fr;
-  min-height: 520px;
-  padding: clamp(2rem, 7vw, 6rem) clamp(1rem, 5vw, 5rem);
+  gap: 1.4rem;
+  grid-template-columns: 1.18fr 0.82fr;
+  margin: 0 clamp(0.75rem, 3vw, 1.25rem);
+  min-height: 500px;
+  overflow: hidden;
+  padding: clamp(2rem, 7vw, 5rem) clamp(1rem, 5vw, 4rem);
 }
 
 .hero-copy {
@@ -17,15 +20,16 @@
 
 h1 {
   color: var(--text);
-  font-size: clamp(2.45rem, 7vw, 5.4rem);
-  line-height: 1.02;
+  font-size: clamp(2.3rem, 6vw, 4.9rem);
+  font-weight: 900;
+  line-height: 1.04;
   margin: 0;
 }
 
 p {
   color: var(--muted);
-  font-size: 1.08rem;
-  line-height: 1.8;
+  font-size: 1.06rem;
+  line-height: 1.85;
 }
 
 .hero-actions {
@@ -37,19 +41,19 @@ p {
 
 .primary-link,
 .secondary-link {
-  border-radius: 8px;
-  font-weight: 800;
-  padding: 0.9rem 1.05rem;
+  border-radius: 999px;
+  font-weight: 900;
+  padding: 0.9rem 1.15rem;
   text-decoration: none;
 }
 
 .primary-link {
   background: var(--accent);
-  color: white;
+  color: #0d1621;
 }
 
 .secondary-link {
-  background: var(--surface);
+  background: var(--surface-soft);
   color: var(--accent-strong);
 }
 
@@ -58,25 +62,28 @@ p {
 }
 
 .next-card h2 {
+  color: var(--accent-strong);
   font-size: 3rem;
   margin: 0.6rem 0 0;
 }
 
 .next-card strong {
+  color: white;
   display: block;
-  font-size: 2.5rem;
+  font-size: 2.35rem;
   letter-spacing: 0;
   margin-top: 1rem;
 }
 
 .next-card small {
+  color: var(--muted);
   display: block;
   margin-top: 1rem;
-  opacity: 0.86;
+  opacity: 0.96;
 }
 
 .mini-label {
-  color: var(--gold);
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -87,16 +94,38 @@ p {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  padding: 1.2rem clamp(1rem, 5vw, 5rem);
+  padding: 1.2rem clamp(1rem, 5vw, 4rem);
+}
+
+.quick-grid app-card,
+.search-results app-card {
+  display: block;
+}
+
+.quick-grid h3 {
+  color: var(--text);
+  margin: 0.3rem 0 0;
+}
+
+.quick-grid p {
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
 }
 
 .quick-grid a {
+  background: rgba(189, 238, 255, 0.08);
+  border: 1px solid rgba(189, 238, 255, 0.18);
+  border-radius: 999px;
   color: var(--accent-strong);
-  font-weight: 800;
+  display: inline-flex;
+  font-weight: 900;
+  padding: 0.55rem 0.8rem;
+  text-decoration: none;
 }
 
 .search-results h2 {
-  padding: 1rem clamp(1rem, 5vw, 5rem) 0;
+  color: var(--text);
+  padding: 1rem clamp(1rem, 5vw, 4rem) 0;
 }
 
 @media (max-width: 1100px) {
@@ -109,6 +138,7 @@ p {
 @media (max-width: 860px) {
   .hero {
     grid-template-columns: 1fr;
+    margin: 0;
     min-height: auto;
   }
 

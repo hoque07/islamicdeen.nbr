@@ -1,30 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700;800;900&family=Noto+Naskh+Arabic:wght@500;700&display=swap');
 
-:root {
-  --page: #f8fbff;
-  --surface: #ffffff;
-  --text: #10231f;
-  --muted: #667a75;
-  --border: #dbe9ee;
-  --accent: #00765c;
-  --accent-strong: #005643;
-  --accent-soft: #dff5ee;
-  --gold: #bd8d22;
-  --shadow: 0 18px 42px rgba(16, 35, 31, 0.08);
-  color-scheme: light;
-}
-
+:root,
 :root.dark-theme {
-  --page: #071512;
-  --surface: #10231f;
-  --text: #eefbf7;
-  --muted: #a6bdb6;
-  --border: #24413a;
-  --accent: #22b995;
-  --accent-strong: #88f0d4;
-  --accent-soft: #123e34;
-  --gold: #e3bd5f;
-  --shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+  --page: #121a25;
+  --page-deep: #0c141e;
+  --surface: #1c2535;
+  --surface-2: #222d40;
+  --surface-soft: #263247;
+  --text: #f4f8fb;
+  --muted: #a8b3c4;
+  --border: #334155;
+  --accent: #bdeeff;
+  --accent-strong: #d9f7ff;
+  --accent-soft: #26364a;
+  --gold: #ffb84d;
+  --success: #54d66f;
+  --danger: #ff6b70;
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
   color-scheme: dark;
 }
 
@@ -33,19 +25,19 @@
 }
 
 html {
-  background: var(--page);
+  background: var(--page-deep);
   scroll-behavior: smooth;
 }
 
 body {
   background:
-    linear-gradient(90deg, rgba(0, 118, 92, 0.035) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(0, 118, 92, 0.035) 1px, transparent 1px),
-    var(--page);
-  background-size: 34px 34px;
+    radial-gradient(circle at 78% 8%, rgba(189, 238, 255, 0.08), transparent 24rem),
+    radial-gradient(circle at 12% 28%, rgba(84, 214, 111, 0.05), transparent 20rem),
+    linear-gradient(180deg, var(--page) 0%, var(--page-deep) 100%);
   color: var(--text);
   font-family: 'Noto Sans Bengali', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   margin: 0;
+  min-height: 100vh;
 }
 
 .arabic,
@@ -62,13 +54,33 @@ input {
   font-family: inherit;
 }
 
+button {
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+button:active,
+a:active {
+  transform: translateY(1px);
+}
+
+input {
+  outline: none;
+}
+
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 ::selection {
   background: var(--accent);
-  color: white;
+  color: #0d1621;
 }
 
 @media (max-width: 980px) {
   body {
-    padding-bottom: 58px;
+    padding-bottom: 92px;
   }
 }
